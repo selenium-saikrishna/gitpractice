@@ -1,0 +1,169 @@
+
+Version Controlling
+======================
+
+Git and SVN are repositories which are used for version controlling.
+Each developer or tester can upload his code in the Version controlling system
+the version controller will accept the project uploads from various developers
+and it will create one intgrated project out of these uploads
+
+The process of uploading is called as checkin
+
+The version controlling combines are this code and creates one project
+
+When the developers download the code  from this version controlling system 
+they will that it will contain all the work done by the complete team
+
+It also maintains a track of all the older and latest versions
+
+These systems are of two types
+1 Centralised version controlling 
+  eg: SVN
+
+2 Distibuted version controlling
+  eg: GIT
+
+In centralised version controlling the complete repository is maintained on a 
+ remote machine.Developers and testers can commit the code into this repository
+
+In DVC repository is maintained on a remote server as well as on every developers 
+machine.
+
+The developer first commits his code into the local repository running 
+on his machine.later it is uploaded into the remote repository
+
+
+Downloading and installing GIT
+===============================
+1 Open https://git-scm.com/downloads
+2 Download Git for windows
+3 Install it
+
+Once git is installed we get an application called GIT bash
+This is the command prompt of git where we run git commands
+
+Git Configuration commands
+============================
+user name and email id of developer should be configured into git
+These setting will work for all the users accessing this machine
+
+1 To configure username globally 
+   git config --global user.name "Sai Krishna"
+
+2 To configure email globally
+   git config --global user.email "selenium.saikrishna@gmail.com"
+3 To find the list of configuration details
+   git config --list
+
+Starting a repository
+=======================
+1 git init
+  This will create a hidden folder called .git.Once this 
+  folder is created we can start executing git commands
+
+2 git status
+  This will show the status of the repository
+
+Working directory is the actual folder where 
+ the code is present
+From here code is sent into stagging area.All the files which
+have come into stagging are called tracked files
+From stagging area the code is sent into git local repository
+where version controlling is done.This is called commiting
+
+Git stagging commands
+======================
+1 To send one file into stagging area..ie it becomes a tracked file
+	git add filename
+
+2 To send multiple files into stagging area
+       git add file1 file2 file3 file4
+
+3 To send all the files present in the current directory
+  into stagging area
+       git add .
+
+4  To remove a file from stagging area
+	git reset filename
+        git rm --cached filename
+
+Commiting data into Local repository
+=====================================
+1 git commit -m "Some Message"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

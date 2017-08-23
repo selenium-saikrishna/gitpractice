@@ -1,0 +1,62 @@
+detect problems or bugs as early as posssible in the dev
+life cycle
+
+since the entire code base is integrated,built and tested 
+constantly the potential bugs are errors are caught early
+in the life cycle which results in quality software
+
+stages in implementing continuous integration
+1 automated build are scheduled on a regular basis.
+2 build script compiles the application
+  and runs a set of automated tests.
+3 developers now commit their changes regularly
+4 build servers would alert the team members in case
+  of build failure
+
+
+1 a build is triggered whenever new code is commited
+  to the central repository
+2 broken builds are usually treated as a high priority
+  issue and are fixed quickly
+
+
+Continuous integration
+the practice of merging development work with the main branch
+constantly
+
+contnuous delivary
+continuous delivary of the code to another enviromnet once 
+the code is redy to ship.generally into pre-production servers
+the idea is to deliver the product ot any user base
+which can be QA or customer for review
+
+continuous deployment
+the deployment of release of code into production as
+soon as the code is ready
+
+
+Jenkins
+it is a ci and build server
+it is used to manually,periodiacally and automatically build 
+software development projects
+it is aci tools created in java
+jenkins can be used for ci on projects creatred in different languages
+ like java,c#,rubu,php etc
+
+
+why jenkins is popular in ci
+1 easy to use
+2 highly extendable
+
+
+
+
+
+
+
+
+
+
+
+
+

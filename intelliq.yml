@@ -1,0 +1,14 @@
+intelliq: it_trainings
+
+course_offered: 
+    - devops:
+        - tools:
+            - git
+            - docker
+            - jenkins
+    - selenium:
+        - tools:
+            - ide: >
+                this is a record and 
+                playback tools
+		

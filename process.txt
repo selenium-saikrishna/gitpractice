@@ -1,0 +1,9 @@
+top
+htop
+ps -A
+pstree
+kill PID
+pgrep firefox
+pkill firefox
+killall firefox
+renice 19 PID

@@ -1,0 +1,128 @@
+1 Download and install oracle virtual box
+   https://www.virtualbox.org/
+
+2 Download vagrant and install it
+   https://www.vagrantup.com/downloads.html
+
+3 open cmd prompt
+4 create a folder called vagrantbox
+      mkdir vagrantbox
+5 Change directory to the folder we created
+      cd vagrantbox
+6 vagrant box add ubuntu/trusty64
+7 vagrant init ubuntu/trusty64
+8 vagrant up
+
+
+Lunux Commands
+===============
+
+System related commands
+------------------------
+pwd - this shows the present working directory
+
+du - disk usage
+du -h : display disk uage in human readable format
+
+df - displays disk free
+df -h : display disk free space in human readable format
+
+
+Basic file operations
+-----------------------
+
+To create files we can the followinfg 3 commands
+  touch,cat,vi editor
+ To create empty file we can use touch command
+   touch filename
+ Note: touch is also used for updating the time stamp of files
+We can also create multiple files using touch
+
+   touch file1 file2 file3
+
+We can also create files using cat command
+  cat > filename
+
+cat can also be used for displaying the content of the file
+cat filename
+
+we also appen data to the existing file
+  cat >> filename
+
+To list all the files present in current working directory
+   ls
+
+to display long listing of files we can use
+  ls -l
+this will show metadata about the files
+
+any file or folder whose name starts with a . is treated as a 
+hidden file or hidden folder
+the aboce ls command will display only the visible file
+
+To see all the files ie visible and hidden
+ls -a
+
+
+multiple options in linux can be combined as a single command
+to display all files and also to do long listing
+  ls -la
+
+to do long listing of all files and see the size in human 
+readable format
+  ls -lah
+
+To display files based on time stamps ie latest files first
+ls -lt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

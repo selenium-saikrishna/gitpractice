@@ -1,0 +1,107 @@
+To stop multiple containers
+----------------------------
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+working on nginx
+-------------------
+docker run -d --name webserver -P nginx
+
+docker run -d -name webserver -p 8080:80 webserver
+
+docker run -d --name mywebserver -p 80:80 httpd
+
+working on apache webserver
+---------------------------
+docker search httpd
+docker pull httpd
+docker run -d --name mywebserver httpd
+docker port mywebserver
+ to publish all exposed ports to random ports
+docker run -d --name mywebserver -P httpd
+
+working on busybox container
+-----------------------------
+docker search busybox
+
+docker run -t -i busybox
+docker run -d --name mywebserver -P httpd
+
+To stop the above container use container id or the name we gave to container
+docker stop mywebserver
+
+Modifying containers
+----------------------
+docker run -i -t  --name container1 --rm ubuntu:latest
+
+apt-get update
+
+apt-get install git
+
+git --version
+
+docker commit mycontainer1 intelliq/ubuntu-git
+
+docker run -it --name c1 intelliq/ubuntu-git
+
+//Pushing into docker hub
+------------------------------
+docker push intelliq/ubuntu-git
+
+
+Creating a local private repository
+------------------------------------
+Search for registry in docker hub
+docker search registry
+docker pull registry
+docker run -d -p 5000:5000 --name localregistry registry
+Pull 2 image alpine linux and busy box linux
+docker pull alpine
+docker pull busybox
+
+docker tag alpine:latest localhost:5000/alpine:latest
+docker push localhost:5000/alpine:latest
+
+docker search localhost:5000/alpine
+
+Data Volumes
+--------------
+docker volume create --name DataVolume1
+docker run -ti --rm -v DataVolume1:/datavolume1 ubuntu
+docker run -it --volumes-from container1 --name container2 busybox
+
+docker restart container1
+docker attach container1
+
+
+Linking containers
+------------------
+docker pull redis
+docker run -d --name redis1 redis
+docker run -it --link redis1:redis --name redisclient1 busybox
+
+
+Docker Swarm
+---------------
+Open power shell as administrator
+docker-machine create --driver hyperv manager1
+docker-machine create --driver hyperv worker2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
